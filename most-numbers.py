@@ -1,8 +1,5 @@
 def checkio(*args):
-    if len(args) == 0:
-        return 0
-    else:
-        return round(max(args) - min(args), 3)
+    return 0 if len(args) == 0 else round(max(args) - min(args), 3)
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

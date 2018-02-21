@@ -1,14 +1,5 @@
 def count_words(text, words):
-    text = text.lower()
-    # text = text.split(' ')
-
-    cnt = 0
-
-    for i in words:
-        if i in text:
-            cnt += 1
-    # print(cnt)
-    return cnt
+    return [i in text.lower() for i in words].count(True)
 
 
 if __name__ == '__main__':

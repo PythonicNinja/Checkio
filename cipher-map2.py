@@ -6,10 +6,11 @@ def recall_password(cipher_grille, ciphered_password):
     result = ''
 
     for n in range(4):
-        for i in range(len(ciphered_password)):
-            for j in range(len(ciphered_password)):
-                if cipher_grille[i][j] == 'X':
-                    result += ciphered_password[i][j]
+        for g, p in zip(cipher_grille, ciphered_password):
+            for i, j in zip(g, p):
+                if i =='X':
+                    result += j
+
         cipher_grille = rotate_matrix(cipher_grille)
 
     return result

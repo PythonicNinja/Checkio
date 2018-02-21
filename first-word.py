@@ -2,12 +2,9 @@ def first_word(text: str) -> str:
     """
         returns the first word in a given text.
     """
-    text = text.replace(',', ' ')
-    text = text.replace('.', ' ')
 
-    text = text.split()
 
-    return text[0]
+    return text.replace(',', '').replace('.', '').split()[0]
 
 
 if __name__ == '__main__':

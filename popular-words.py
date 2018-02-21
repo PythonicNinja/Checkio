@@ -1,10 +1,5 @@
 def popular_words(text, words):
-
-    text = text.lower()
-
-    result = dict(map(lambda x: [x, text.count(x)], words))
-
-    return result
+    return dict(map(lambda x: [x, text.lower().count(x)], words))
 
 
 if __name__ == '__main__':

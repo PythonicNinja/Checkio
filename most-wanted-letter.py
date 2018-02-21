@@ -1,5 +1,5 @@
-
 from string import ascii_lowercase
+
 def checkio(text):
 
     text = text.lower()

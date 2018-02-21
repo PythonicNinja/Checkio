@@ -3,8 +3,7 @@
 
 
 def checkio(data):
-    l = [i for i in data if data.count(i) > 1]
-    return l
+    return [i for i in data if data.count(i) > 1]
 
 #Some hints
 #You can use list.count(element) method for counting.

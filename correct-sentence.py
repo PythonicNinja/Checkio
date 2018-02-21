@@ -3,16 +3,7 @@ def correct_sentence(text: str) -> str:
         returns a corrected sentence which starts with a capital letter
         and ends with a dot.
     """
-
-    if text[-1] != '.':
-        text += '.'
-
-    tempChar = text[0]
-    
-    if text[0] != tempChar.upper():
-        text = tempChar.upper() + text[1:]
-
-    return text
+    return f"{text[0].upper()}{text[1:].replace('.', '')}."
 
 
 if __name__ == '__main__':

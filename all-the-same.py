@@ -3,7 +3,7 @@ from typing import List, Any
 
 def all_the_same(elements: List[Any]) -> bool:
 
-    return all(elements[i] == elements[i+1] for i in range(len(elements)-1))
+    return all(i == elements[0] for i in elements)
 
 
 if __name__ == '__main__':

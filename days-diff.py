@@ -4,10 +4,7 @@ def days_diff(date1, date2):
     """
         Find absolute diff in days between dates
     """
-    d1 = datetime(*date1)
-    d2 = datetime(*date2)
-
-    return abs((d2-d1).days)
+    return abs((datetime(*date1)-datetime(*date2)).days)
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing

@@ -1,11 +1,7 @@
+from functools import reduce
+
 def checkio(number):
-    result = 1
-
-    for i in str(number):
-        if i != '0':
-            result *= int(i)
-
-    return result
+    return reduce((lambda prev, curr: prev * curr), [int(num) for num in str(number) if num != '0'], 1)
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

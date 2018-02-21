@@ -6,7 +6,7 @@ def say_hi(name, age):
         Hi!
     """
     # your code here
-    return "Hi. My name is " + str(name) + " and I'm " + str(age) + " years old"
+    return f"Hi. My name is {str(name)} and I'm {str(age)} years old"
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing

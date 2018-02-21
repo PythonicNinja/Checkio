@@ -2,10 +2,7 @@ def left_join(phrases):
     """
         Join strings and replace "right" to "left"
     """
-    string = ','.join(phrases)
-
-    string = string.replace('right', 'left')
-    return string
+    return ','.join(phrases).replace('right', 'left')
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing

@@ -3,15 +3,14 @@
 
 
 def checkio(number):
-    result = ''
-    if number%3 == 0and number%5 == 0:
-        result += 'Fizz Buzz'
-    elif number%3 == 0:
-        result += 'Fizz'
+    if number%3 == 0:
+        result = 'Fizz'
+        if number%5 == 0:
+            result += ' Buzz'
     elif number%5 == 0:
-        result += 'Buzz'
+        result = 'Buzz'
     else:
-        result += str(number)
+        result = str(number)
 
     return result
 
